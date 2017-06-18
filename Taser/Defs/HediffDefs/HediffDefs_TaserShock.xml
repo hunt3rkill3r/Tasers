@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Taser Hediff -->
+	<HediffDef ParentName="InjuryBase">
+		<defName>TShock</defName>
+		<label>Tasered</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<!--<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>-->
+		<defaultLabelColor>(1.0, 0.6, 0.4)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>15000</min>
+					<max>15000</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+		<injuryProps>
+		  <painPerSeverity>0.0125</painPerSeverity>
+		  <bleedRate>0</bleedRate>
+		  <canMerge>false</canMerge>
+		  <destroyedLabel>Destroyed</destroyedLabel>
+		</injuryProps>
+		<maxSeverity>1</maxSeverity>
+		<lethalSeverity>1</lethalSeverity>
+		<stages>
+		<!--nostage
+			<li>
+				<label>suppressed</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li> -->
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.9</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>extreme</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

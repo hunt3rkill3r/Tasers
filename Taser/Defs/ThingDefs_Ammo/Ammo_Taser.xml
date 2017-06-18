@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Class="Combat_Realism.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_TaserCharge</defName>
+    <label>Taser Cartridge</label>
+    <graphicData>
+      <texPath>Ammo/Taser</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>AmmoTaser</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>1.25</MarketValue>
+    </statBases>
+	<!--<recipeMaker>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+	</recipeMaker>-->
+	<linkedProjectile>Bullet_Taser</linkedProjectile>
+	<ammoClass>taserammo</ammoClass>
+  </ThingDef>
+
+</Defs>

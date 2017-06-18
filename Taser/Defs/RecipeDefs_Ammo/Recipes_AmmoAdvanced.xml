@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_TaserCartridge</defName>
+    <label>make Taser Cartridge x20</label>
+    <description>Craft 20 Taser Cartridges.</description>
+	<ingredients>
+      <li>
+        <filter>
+			<categories>
+						<li>SLDBar</li>
+            </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+			<categories>
+						<li>USLDBar</li>
+            </categories>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ElectronicComponents</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+                    </categories>
+      <thingDefs>
+            <li>ElectronicComponents</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>TableElectronics</li>
+	</recipeUsers>
+    <products>
+      <Ammo_TaserCharge>20</Ammo_TaserCharge>
+    </products>
+  </RecipeDef>
+
+</RecipeDefs>

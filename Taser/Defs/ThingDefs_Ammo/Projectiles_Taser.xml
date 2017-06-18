@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Taser</defName>
+		<label>taser charge</label>
+		<graphicData>
+		<texPath>Ammo/Projectile/Taser</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>tazer</damageDef>
+			<speed>60</speed>
+			<damageAmountBase>1</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+</ThingDefs>

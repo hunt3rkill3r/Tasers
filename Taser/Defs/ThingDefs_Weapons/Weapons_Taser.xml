@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef ParentName="BaseGunCR">
+		<defName>Gun_Taser</defName>
+		<label>X26P Taser</label>
+		<description>The X26P Taser electroshock weapon is designed to disable targets at short to medium range.</description>
+		<graphicData>
+			<texPath>Weapons/X26P</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>taserpickup</soundInteract>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MarketValue>1200</MarketValue>
+			<AimEfficiency>1.35</AimEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>0.44</SwayFactor>
+			<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+			<Bulk>2.10</Bulk>
+			<Mass>1.00</Mass>
+		</statBases>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Specialranged</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.07</MoveSpeed>
+			<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<costList>
+			<Component>5</Component>
+			<Weapon_Parts>12</Weapon_Parts>
+			<Electronics>7</Electronics>
+			<Plastic>50</Plastic>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableElectronics</li>
+			</recipeUsers>
+			<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>12</minLevel>
+				</li>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<verbs>
+		  <li Class="Combat_Realism.VerbPropertiesCR">
+			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<projectileDef>Bullet_Taser</projectileDef>
+			<warmupTime>0.20</warmupTime>
+			<range>10</range>
+			<soundCast>tasershot</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		  </li>
+		</verbs>
+		<comps>
+		  <li Class="Combat_Realism.CompProperties_FireModes">
+			<compClass>Combat_Realism.CompFireModes</compClass>
+			<aiUseBurstMode>FALSE</aiUseBurstMode>
+			<aiUseAimMode>TRUE</aiUseAimMode>
+		  </li>
+		  <li Class="Combat_Realism.CompProperties_AmmoUser">
+			<magazineSize>1</magazineSize>
+			<reloadTicks>140</reloadTicks>
+			<ammoSet>AmmoSet_Taser</ammoSet>
+		  </li>
+			  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.2,0.3,-0.1)</MainHand>
+			  </li>
+		</comps>
+		<smeltProducts>
+		  <Weapon_Parts>1</Weapon_Parts>
+		</smeltProducts>
+		
+	</ThingDef>
+
+</ThingDefs>

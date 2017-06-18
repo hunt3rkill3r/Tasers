@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>tasershot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>taser</clipPath>         
+        </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>taserpickup</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interacttaser</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>100</min>
+          <max>100</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</DefPackage-SoundDef>

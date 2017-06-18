@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<DamageDef ParentName="LocalInjuryBase">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <defName>tasershock</defName>
+    <label>Taser Shock</label>
+    <harmsHealth>false</harmsHealth>
+    <battleWound>false</battleWound>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <canInterruptJobs>true</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <externalViolence>false</externalViolence>
+    <deathMessage>{0} shocked to death.</deathMessage>
+    <hasChanceToAdditionallyDamageInnerSolidParts>false</hasChanceToAdditionallyDamageInnerSolidParts>
+    <hediff>TShock</hediff>
+    <hediffSkin>TShock</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>True</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+  </DamageDef>-->
+
+  <!--<DamageDef ParentName="StunBase">
+    <defName>TaserStun</defName>
+    <label>stun</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stunned to death.</deathMessage>
+    <armorCategory>Electric</armorCategory>
+    <explosionDamage>1</explosionDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCellMote>Mote_BlastEMP</explosionCellMote>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+  </DamageDef>-->
+  
+  <DamageDef Name="Shock">
+	<workerClass>Combat_Realism.DamageWorker_AddInjuryCR</workerClass>
+    <defName>Shock</defName>
+    <label>Shock</label>
+    <externalViolence>true</externalViolence>
+    <!--<battleWound>true</battleWound>-->
+    <deathMessage>{0} has been shocked to death.</deathMessage>
+    <hediff>ElectricalBurn</hediff>
+    <hediffSkin>ElectricalBurn</hediffSkin>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <hasChanceToAdditionallyDamageInnerSolidParts>false</hasChanceToAdditionallyDamageInnerSolidParts>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+  </DamageDef>
+  
+  <DamageDef ParentName="Shock">
+    <defName>tazer</defName>
+    <label>tasershock</label>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <additionalHediffs>
+      <li>
+        <hediff>TShock</hediff>
+        <severityPerDamageDealt>0.05</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <armorCategory>Blunt</armorCategory>
+  </DamageDef>
+	
+</Defs>

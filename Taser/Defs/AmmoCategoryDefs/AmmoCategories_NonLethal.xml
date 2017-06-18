@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Combat_Realism.AmmoCategoryDef>
+    <defName>taserammo</defName>
+    <label>electroshock</label>
+    <description>An incapacitating, very painful electrical charge.</description>
+  </Combat_Realism.AmmoCategoryDef>
+  
+</Defs>

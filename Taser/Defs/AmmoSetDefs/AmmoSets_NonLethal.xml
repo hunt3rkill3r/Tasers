@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Combat_Realism.AmmoSetDef>
+    <defName>AmmoSet_Taser</defName>
+    <label>Taser Cartridge</label>
+	<ammoTypes>
+	  <li>Ammo_TaserCharge</li>
+	</ammoTypes>
+  </Combat_Realism.AmmoSetDef>
+  
+</Defs>
